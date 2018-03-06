@@ -1,0 +1,1 @@
+select distinct city from station where regexp_like (lower(city),'^[^aeiou]') OR regexp_like(city,'[^aeiou]$');
